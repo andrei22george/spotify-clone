@@ -445,13 +445,16 @@ body {
 }
 
 .player-slider input {
-    -webkit-appearance: var(--spotify-green);
     width: 40vw;
     height: 5px;
     background-color: gray;
     border-radius: 5px;
     position: relative;
     border: none;
+}
+
+.player-slider::-webkit-slider-thumb {
+    background-color: var(--spotify-green);
 }
 
 .footer-player-middle-slider {
