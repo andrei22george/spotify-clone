@@ -411,11 +411,11 @@ body {
 }
 
 .footer-player-middle-buttons img:hover {
-    transform: scale(1.4);
+    transform: scale(1.2);
 }
 
 .pause-button:hover {
-    transform: scale(1.4);
+    transform: scale(1.2);
 }
 
 .footer-player-middle-buttons, .footer-player-middle-slider {
