@@ -1,4 +1,4 @@
-
+/* @import url(https://fonts.googleapis.com/css?family=Nunito); */
 
 :root {
     --spotify-green: #1FD75F;
@@ -25,7 +25,6 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: row;
-
 }
 
 .left {
@@ -41,7 +40,7 @@ body {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    font-family: "Nunito";
+    font-family: 'Nunito';
 }
 
 .menu {
@@ -490,4 +489,128 @@ body {
 
 .footer-player-right-buttons img:hover {
     transform: scale(1.4);
+}
+
+.footer-player-left-artwork {
+    display: none;
+}
+
+.play-resume-button {
+    display: none;
+}
+
+@media (max-width: 390px) {
+    .left {
+        display: none;
+    }
+
+    .playlist-header, .playlist-songs-container {
+        width: 90%;
+    }
+
+    .arrow-container {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .playlist-top-email span {
+        padding: 0 15px 0 0;
+        font-size: 14px;
+    }
+
+    .playlist-title {
+        font-size: 20px;
+    }
+
+    .playlist-cover img {
+        width: 100%;
+        height: auto;
+    }
+
+    .playlist-stats {
+        font-size: 12px;
+    }
+
+    .playlist-stats img {
+        width: 20px;
+    }
+
+    .playlist-buttons-resume-pause {
+        width: 35px;
+        height: 35px;
+    }
+
+    .playlist-buttons-resume-pause img,
+    .playlist-buttons-like img,
+    .playlist-buttons-download img,
+    .playlist-buttons-three-dot img {
+        width: 20px;
+    }
+
+    .playlist-songs {
+        font-size: 14px;
+    }
+
+    .song-name,
+    .song-artist {
+        text-overflow: ellipsis;
+        font-size: 14px;
+    }
+
+    .song-date-added {
+        font-size: 12px;
+        padding-left: 15px;
+    }
+
+    .footer-player {
+        width: 90%;
+    }
+
+    .footer-player-left-song,
+    .footer-player-right-buttons {
+        display: none;
+    }
+
+    .footer-player-left-artwork {
+        display: flex;
+        position: absolute;
+        left: 0px;
+        bottom: 0px
+    }
+    
+    .footer-player-left-artwork img {
+        width: 60px;
+        padding: 10px;
+        height: auto;
+    }
+
+    .footer-player-middle-buttons {
+        display: none;
+    }
+
+    .player-time {
+        display: none;
+    }
+
+    .footer-player-left-like {
+        left: 55px;
+        display: flex;
+        position: absolute;
+    }
+
+    .player-slider {
+        width: 100px;
+    }
+
+    .pause-resume-button {
+        display: flex;
+        position: absolute;
+        right: 25px;
+        bottom: 25px;
+    }
+
+    .pause-resume-button img {
+        width: 25px;
+        height: auto;
+    }
 }
